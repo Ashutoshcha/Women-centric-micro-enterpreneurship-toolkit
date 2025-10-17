@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Toolkit | SheRise Toolkit — Empowering Women Entrepreneurs</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #d6336c;
+  --accent: #f7c6d4;
+  --light: #fff8fa;
+  --text-dark: #222;
+  --muted: #6b6b6b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a.cta {
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* Main Layout */
+main.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+main h1 {
+  color: var(--primary);
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+/* Toolkit Cards */
+.tool-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  padding: 30px 25px;
+}
+
+.tool-card h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.tool-card p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #b82a59;
+}
+
+.btn.outline {
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+}
+
+.btn.outline:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Calculator Result */
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff3f7;
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Product Card Output */
+.product-output {
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 80px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 2rem;
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+  .tool-card {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">SheRise</a>
+     <nav class="nav">
+     <a href="index.html">Home</a>
+      <a href="toolkit.html">Toolkit</a>
+      <a href="stories.html">Success Stories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Join Us</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Toolkit</h1>
+  <p>Tools designed for ease-of-use on mobile phones and basic computers.</p>
+
+  <section class="tool-card">
+    <h2>1. Finance Helper</h2>
+    <p>Enter costs and selling price to see profit per item and monthly projection.</p>
+    <div class="calc">
+      <label>Cost price (per item): <input id="cost" type="number" value="50"></label>
+      <label>Selling price (per item): <input id="price" type="number" value="80"></label>
+      <label>Items sold per month: <input id="qty" type="number" value="100"></label>
+      <button id="calcBtn" class="btn primary">Calculate</button>
+    </div>
+    <div id="calcResult" class="result" aria-live="polite"></div>
+  </section>
+
+  <section class="tool-card">
+    <h2>2. Simple Shop Builder</h2>
+    <p>Create a shareable product card — copy-paste the HTML into WhatsApp or print as a flyer.</p>
+    <label>Product name: <input id="pname" type="text" value="Handmade Scarf"></label>
+    <label>Price: <input id="pprice" type="text" value="₹350"></label>
+    <label>Description: <input id="pdesc" type="text" value="Cozy, handwoven scarf."></label>
+    <button id="buildBtn" class="btn outline">Build Product Card</button>
+    <pre id="productCard" class="product-output"></pre>
+  </section>
+
+  <section class="tool-card">
+    <h2>3. Resources</h2>
+    <ul>
+      <li><a href="#">Printable price list template (PDF)</a></li>
+      <li><a href="#">How to take good product photos (guide)</a></li>
+      <li><a href="#">List of local microfinance schemes</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© Developed By Hackzilla 2.0</p>
+</footer>
+
+<script>
+// Finance Helper Calculator
+document.getElementById('calcBtn').addEventListener('click', function() {
+  const cost = parseFloat(document.getElementById('cost').value);
+  const price = parseFloat(document.getElementById('price').value);
+  const qty = parseInt(document.getElementById('qty').value);
+
+  if (isNaN(cost) || isNaN(price) || isNaN(qty)) {
+    document.getElementById('calcResult').textContent = 'Please enter valid numbers.';
+    return;
+  }
+
+  const profitPerItem = price - cost;
+  const monthlyProfit = profitPerItem * qty;
+
+  document.getElementById('calcResult').textContent =
+    `Profit per item: ₹${profitPerItem.toFixed(2)} | Estimated monthly profit: ₹${monthlyProfit.toLocaleString()}`;
+});
+
+// Product Card Builder
+document.getElementById('buildBtn').addEventListener('click', function() {
+  const name = document.getElementById('pname').value;
+  const price = document.getElementById('pprice').value;
+  const desc = document.getElementById('pdesc').value;
+
+  const htmlCode = `<div class="product-card" style="border:1px solid #ccc;padding:10px;border-radius:8px;text-align:center;font-family:Poppins;">
+  <h3 style="color:#d6336c;">${name}</h3>
+  <p>${desc}</p>
+  <strong>${price}</strong>
+</div>`;
+
+  document.getElementById('productCard').textContent = htmlCode;
+});
+</script>
+</body>
+</html>

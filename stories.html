@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Success Stories | SheRise Toolkit — Empowering Women</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #d6336c;
+  --accent: #f7c6d4;
+  --light: #fff8fa;
+  --text-dark: #222;
+  --muted: #6b6b6b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a.cta {
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* Main */
+main.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.3rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+main p {
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+/* Stories Grid */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.story {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.story img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.story h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.story p {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 80px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 2rem;
+  }
+
+  .story img {
+    height: 150px;
+  }
+}
+</style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">SheRise</a>
+     <nav class="nav">
+     <a href="index.html">Home</a>
+      <a href="toolkit.html">Toolkit</a>
+      <a href="stories.html">Success Stories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Join Us</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Success Stories</h1>
+  <p>Real women, real businesses — short inspiring profiles.</p>
+
+  <div class="story-grid">
+    <article class="story">
+      <img src="assets/placeholder.png" alt="Kamala — Tailor">
+      <h3>Kamala — Tailor</h3>
+      <p>Started making masks and household linens, now sells to nearby shops and earns a stable income.</p>
+    </article>
+
+    <article class="story">
+      <img src="assets/placeholder.png" alt="Sonia — Pickles & Snacks">
+      <h3>Sonia — Pickles & Snacks</h3>
+      <p>Used our pricing tool and doubled margins after adjusting portion sizes — now shipping across town.</p>
+    </article>
+
+    <article class="story">
+      <img src="assets/placeholder.png" alt="Nisha — Organic Soap Maker">
+      <h3>Nisha — Organic Soap Maker</h3>
+      <p>Learned online branding through SheRise and created her own eco-friendly skincare brand.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© Developed By Hackzilla 2.0</p>
+</footer>
+</body>
+</html>

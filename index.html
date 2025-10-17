@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SheRise Toolkit — Empowering Women Entrepreneurs</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #d6336c;
+  --accent: #f7c6d4;
+  --light: #fff8fa;
+  --text-dark: #222;
+  --muted: #6b6b6b;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a.cta {
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(120deg, #fff, #ffe3eb);
+  padding: 60px 0;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.hero-text p {
+  color: var(--muted);
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+.hero-ctas .btn {
+  margin-right: 12px;
+}
+
+.hero-art img {
+  width: 350px;
+  max-width: 90%;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #b52357;
+}
+
+.btn.outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn.outline:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ---------- Features ---------- */
+.features {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* ---------- Impact ---------- */
+.impact {
+  background: #fff;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.impact h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.impact p {
+  color: var(--muted);
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.social a {
+  color: var(--primary);
+  text-decoration: none;
+  margin: 0 6px;
+  font-weight: 500;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .nav a {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .hero-art img {
+    margin-top: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="#">SheRise</a>
+    <nav class="nav">
+     <a href="index.html">Home</a>
+      <a href="toolkit.html">Toolkit</a>
+      <a href="stories.html">Success Stories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Join Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>SheRise Toolkit</h1>
+        <p>Digital tools, mentorship and resources to help women start and grow micro businesses.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn primary">Explore Toolkit</a>
+          <a href="#" class="btn outline">Register as Mentor</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/business-1839876_1280.jpg" alt="Women entrepreneur illustration">
+      </div>
+    </div>
+  </section>
+
+  <section class="features container">
+    <h2>Key Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Learn Hub</h3>
+        <p>Short lessons and video guides on how to start and run a small business.</p>
+      </div>
+      <div class="card">
+        <h3>Finance Helper</h3>
+        <p>Simple calculators to track expenses, price products and estimate profits.</p>
+      </div>
+      <div class="card">
+        <h3>Shop Builder</h3>
+        <p>Create a basic product listing page to show to customers or share links.</p>
+      </div>
+      <div class="card">
+        <h3>Mentorship Zone</h3>
+        <p>Connect with volunteer mentors for one-on-one advice and local support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact container">
+    <h2>Our Impact</h2>
+    <p>Over 1,000 women have used SheRise Toolkit to launch successful small ventures — from home bakeries to local fashion brands.</p>
+    <a href="#" class="btn primary">Read Their Stories</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; Developed By Hackzilla 2.0</p>
+  <div class="social">
+    <a href="#">Instagram</a> |
+    <a href="#">LinkedIn</a> |
+    <a href="#">Facebook</a>
+  </div>
+</footer>
+</body>
+</html>

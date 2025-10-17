@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact / Join — SheRise Toolkit</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #d6336c;
+  --accent: #f7c6d4;
+  --light: #fff8fa;
+  --text-dark: #222;
+  --muted: #6b6b6b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a.cta {
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* Main Layout */
+main.container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.3rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+main p {
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+/* Form Styles */
+.join-form {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.join-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.join-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #b82a59;
+}
+
+/* Form message */
+#formMsg {
+  margin-top: 15px;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Contact info */
+.contact-info {
+  margin-top: 40px;
+  background: #fff;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.contact-info p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 80px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">SheRise</a>
+     <nav class="nav">
+     <a href="index.html">Home</a>
+      <a href="toolkit.html">Toolkit</a>
+      <a href="stories.html">Success Stories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Join Us</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container contact-page">
+  <h1>Join SheRise</h1>
+  <p>Register as an entrepreneur, mentor, or volunteer.</p>
+
+  <form id="joinForm" class="join-form">
+    <label>Full name: <input name="name" required></label>
+    <label>Email: <input type="email" name="email" required></label>
+    <label>Role:
+      <select name="role">
+        <option>Entrepreneur</option>
+        <option>Mentor</option>
+        <option>Volunteer</option>
+      </select>
+    </label>
+    <label>Short bio / details: <textarea name="message"></textarea></label>
+    <button type="submit" class="btn primary">Submit</button>
+    <div id="formMsg" aria-live="polite"></div>
+  </form>
+
+  <section class="contact-info">
+    <h2>Local Partnerships</h2>
+    <p>If you'd like to partner or sponsor training, email <a href="mailto:partner@sherise.org">partner@sherise.org</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© Developed By Hackzilla 2.0</p>
+</footer>
+
+<script>
+// Simple form handling (for demo purposes)
+document.getElementById('joinForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = this.name.value.trim();
+  const email = this.email.value.trim();
+  const role = this.role.value;
+  const message = this.message.value.trim();
+
+  if(name && email) {
+    document.getElementById('formMsg').textContent = `Thank you, ${name}! Your registration as ${role} has been received.`;
+    this.reset();
+  } else {
+    document.getElementById('formMsg').textContent = 'Please fill in all required fields.';
+  }
+});
+</script>
+</body>
+</html>

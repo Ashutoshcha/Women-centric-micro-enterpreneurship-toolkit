@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About | SheRise Toolkit — Empowering Women Entrepreneurs</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #d6336c;
+  --accent: #f7c6d4;
+  --light: #fff8fa;
+  --text-dark: #222;
+  --muted: #6b6b6b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a.cta {
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* Main Content */
+main.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Mission Section */
+.about-hero {
+  background: linear-gradient(120deg, #fff, #ffe3eb);
+  padding: 60px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.about-hero h1 {
+  color: var(--primary);
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.about-hero p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* What We Do Section */
+.how {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.how h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 25px;
+}
+
+.checklist {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 0;
+}
+
+.checklist li {
+  background: #fff;
+  margin: 12px 0;
+  padding: 14px 18px;
+  border-left: 5px solid var(--primary);
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Tech Stack Section */
+.tech-stack {
+  margin-top: 60px;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tech-stack h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.tech-stack p {
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 80px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 40px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .how h2,
+  .tech-stack h2 {
+    font-size: 1.6rem;
+  }
+
+  .checklist li {
+    font-size: 0.95rem;
+  }
+}
+</style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">SheRise</a>
+     <nav class="nav">
+     <a href="index.html">Home</a>
+      <a href="toolkit.html">Toolkit</a>
+      <a href="stories.html">Success Stories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Join Us</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="about-hero">
+    <h1>Our Mission</h1>
+    <p>SheRise exists to provide accessible digital tools and local mentorship to women who want to start small businesses. We focus on practical training, simple technology, and community connections.</p>
+  </section>
+
+  <section class="how container">
+    <h2>What We Do</h2>
+    <ul class="checklist">
+      <li>Provide short, actionable lessons</li>
+      <li>Offer finance & pricing tools</li>
+      <li>Make it easy to create a product listing or flyer</li>
+      <li>Connect volunteers and mentors to local entrepreneurs</li>
+    </ul>
+  </section>
+
+  <section class="tech-stack">
+    <h2>Technology & Approach</h2>
+    <p>Low-tech first: mobile-friendly web pages, downloadable templates, and offline-printable resources. When available, we integrate with local training centers and microfinance partners.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© Developed By Hackzilla 2.0</p>
+</footer>
+</body>
+</html>
