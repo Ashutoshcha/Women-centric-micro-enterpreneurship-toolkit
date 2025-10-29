@@ -1,0 +1,6 @@
+"scripts": {
+  "start": "node server.js",
+  "dev": "nodemon --watch . --exec node server.js",
+  "lint": "eslint . --ext .js",
+  "format": "prettier --write .",
+}
